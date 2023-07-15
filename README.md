@@ -23,5 +23,5 @@ find it difficult to use and navigate.
     4. MySQL Database
 
 ## Instruction:
-  1.Download the code,Unzip or extract file.
-  2.Inside the extracted file you will find the dbms.zip file, extract the dbms.zip file you will get all the files related to the project.
+    1.Download the code,Unzip or extract file.
+    2.Inside the extracted file you will find the dbms.zip file, extract the dbms.zip file you will get all the files related to the project.
