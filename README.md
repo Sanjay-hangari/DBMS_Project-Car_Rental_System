@@ -11,3 +11,7 @@ This system works like the car-dealer goes to the car_dealer_portal, signs up an
 uploads cars that he thinks are available for renting. Customer logs in to the customer_portal,
 enters the area at which he wants the car and the system scans through all the available cardealers and their cars at that particular area and shows the results to the customer. If the car is already rented by someone else it won’t show up in the search results.
 
+The whole project is designed in ‘HTML’ language and different variables and strings
+have been used for the development of this project. It’s easy to operate and understand. There
+is no any error and warning contents in the project. The design is so simple that user should not
+find it difficult to use and navigate.
