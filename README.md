@@ -6,3 +6,8 @@ personal vehicle or don’t own a vehicle at all. The individual who want to ren
 contact the car rental company for the desired vehicle. This can be done online. At this point,
 this person has to supply some information such as: dates of rental, and type of car. After these
 details are worked out, the individual renting the car must present a valid Identification card.
+
+This system works like the car-dealer goes to the car_dealer_portal, signs up and
+uploads cars that he thinks are available for renting. Customer logs in to the customer_portal,
+enters the area at which he wants the car and the system scans through all the available cardealers and their cars at that particular area and shows the results to the customer. If the car is already rented by someone else it won’t show up in the search results.
+
