@@ -16,7 +16,7 @@ have been used for the development of this project. It’s easy to operate and u
 is no any error and warning contents in the project. The design is so simple that user should not
 find it difficult to use and navigate.
 
- Components used are:
+ ##Components used are:
     1. Python - Django
     2. HTML
     3. CSS
