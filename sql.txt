@@ -1,0 +1,10 @@
+create table dealer(user_id int auto_increment,un varchar(15),fn varchar(15),ln varchar(15),email varchar(30),pwd varchar(16),primary key(user_id,un))engine=MyISAM auto_increment=10 default char set=utf32;
+
+
+create table customer(id int auto_increment,un varchar(15),fn varchar(15),ln varchar(15),email varchar(30),license varchar(15),adhar varchar(15),pwd varchar(16),phone varchar(15),primary key(id,un))engine=MyISAM auto_increment=10 default char set=utf32;
+
+
+create table cdetails(id int auto_increment,uid int references dealer(user_id),carname varchar(20),color varchar(10),city varchar(20),pincode int,capacity int,transmission varchar(10),fuel varchar(10),price varchar(10),primary key(id))engine=MyISAM auto_increment=10 default char set=utf32;
+
+
+create table booking(id int auto_increment,cid int references cdetails(id),did varchar(5),uid int references customer(id),uname varchar(20),carname varchar(20),pickup date,dp date,tot_days varchar(3),tot_price varchar(10),primary key(id))engine=MyISAM auto_increment=0 default char set=utf32;
