@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="{% static 'manage.css' %}">
+    <script src="https://kit.fontawesome.com/07fcb58cae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="">History</a>
+        <a href="search">Search</a>
+        <a href="/">Logout</a>
+      </div><br><br><br><br>
+      <h2 class="head">Your Bookings</h2>
+    {% for i in managee %}
+                <div class="card" >
+                    <div class="container">
+                        <div class="icon" id="icon">
+                            <h4 class="head"><b>{{i.carname}}</b></h4>
+                            <hr>
+                            <div class="a">
+                            <h5>Pickup : {{i.pickup}}</h5>
+                            <h5>Drop : {{i.dp}}</h5>
+                            <h5>Days : {{i.tot_days}}</h5>
+                            <h5>Price : {{i.tot_price}}</h5>
+                            </div>
+                            <form method="post" action="history">
+                                {% csrf_token %}
+                                <input type="hidden" name="bid" value="{{i.id}}">
+                                <input type="submit" class="btn" name="cancel" value="cancel"><br><br>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+    {% endfor %}
+</body>
+</html>

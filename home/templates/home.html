@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+  <h1 class="hedding"><u>Car Rental System</u></h1>
+  <div class="abc">
+   <div class="dropdown">
+     <button class="dropbtn">Menu</button>
+     <div class="dropdown-content">
+       <a href="">Home</a>
+       <div class="dropdownn">
+        <button class="dropbtnn">signup
+        </button>
+        <div class="dropdown-contentt">
+          <a href="csignup">Customer</a>
+          <a href="dsignup">Delear</a>
+        </div>
+      </div>
+       <a href="about">About</a>
+       <a href="contact">Contact</a>
+     </div>
+   </div>
+  <div class="cust">
+    <a href="clogin"><img src="{% static 'cust.jpg' %}" class="imag"></a>
+    <h2>Customer</h2>
+  </div>
+  <div class="deal">
+    <a href="dlogin"><img src="{% static 'deal.png' %}" class="imagg"></a>
+    <h2>Dealer</h2>
+  </div>
+ </div>
+<div>
+  <img class="img1" src="{% static 'car1.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img2" src="{% static 'car2.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img3" src="{% static 'car3.png' %}" width="300px" height="250px"><br>
+  <img class="img4" src="{% static 'car4.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img5" src="{% static 'car5.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img6" src="{% static 'car6.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img7" src="{% static 'car7.jpeg' %}" width="300px" height="250px"><br>
+  <img class="img8" src="{% static 'car7.jpg' %}" width="300px" height="250px"><br>
+</div>
+ 
+</body>
+</html>

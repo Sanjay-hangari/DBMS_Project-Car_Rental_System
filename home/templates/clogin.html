@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'clogin.css' %}">
+</head>
+<body>
+    
+    <div class="aa">
+    <div class="login">
+    <form action="clogin" method="post">
+    {% csrf_token %}
+    <h1 class="hedding"><u>Login</u></h1>
+    <label>User name</label>
+    <input type="text" name="username"><br>
+    <label>Password</label>
+    <input type="password" name="password"><br>
+    <label>Pickup : </label>
+    <input type="text" name="pickup" placeholder="YYYY-MM-DD"><br>
+    <label>Drop : </label>
+    <input type="text" name="drop" placeholder="YYYY-MM-DD"><br>
+    <input type="submit"><br>
+    <a href="csignup" class="link">To create account</a>
+   </form>
+</div>
+</div>
+</body>
+</html>

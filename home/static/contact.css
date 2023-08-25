@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+    background-size: cover;
+}
+
+.cont{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.head{
+    position: absolute;
+    top: 18%;
+    left:48%;
+}

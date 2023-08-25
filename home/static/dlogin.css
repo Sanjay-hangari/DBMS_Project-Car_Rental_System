@@ -1,0 +1,32 @@
+body{
+    background-image: url("bgm3.jpeg");
+     background-size: cover;
+}
+.hedding{
+    color:black;
+    font-size: 50px;
+    position: absolute;
+    bottom: 100%;
+    right: 30%;
+    
+}
+
+.login{
+    color:#2d10a1;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left:10%;
+    font-size: 30px;
+    
+}
+.link{
+    background-color:white;
+    font-size: 15px;
+}
+input{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

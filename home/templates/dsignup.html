@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsignup</title>
+    <link rel="stylesheet" href="{% static 'dsignup.css' %}">
+</head>
+<body>
+    <div class="signup">
+    <h1 class="hedding"><u>Signup</u></h1>
+    <form action="dsignup" method="post">
+        {% csrf_token %}
+        <label>First name</label>
+        <input type="text" name="firstname" ><br>
+        <label>Last name</label>
+        <input type="text" name="lastname"><br>
+        <label>User name</label>
+        <input type="text" name="username"><br>
+        <label>E-mail</label>
+        <input type="email" name="email"><br>
+        <label>Password</label>
+        <input type="password" name="password"><br>
+        <label>Conform password</label>
+        <input type="password" name="password2"><br>
+        <input type="submit"><br>
+        <a href="dlogin" class="link">Already have an accoutn? click here</a><br><br><br>
+    </form>
+</div>
+</body>
+</html>

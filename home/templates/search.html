@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'search.css' %}">
+    <script src="https://kit.fontawesome.com/07fcb58cae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="">Search</a>
+        <a href="clogin">Login</a>
+        <a href="managee">History</a>
+        <a href="/">Logout</a>
+      </div><br><br>
+      <h2 class="head"><u>Available Cars</u></h2><br>
+    {% for i in car %}
+                <div class="card" >
+                    <div class="container">
+                        <div class="icon" id="icon">
+                            <h4 class="head"><b>{{i.carname}}</b></h4>
+                            <hr color="black">
+                            <div class="a">
+                            <i class="fa-solid fa-car"></i> : &ensp;{{i.capacity}} &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa-sharp fa-solid fa-gas-pump"></i> : &ensp;{{i.fuel}}<br><br>
+                            <i class="fa-sharp fa-solid fa-gears"></i> :&ensp; {{i.transmission}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa-solid fa-location-dot"></i> : &ensp;{{i.city}}<br><br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa-solid fa-indian-rupee-sign"></i> : {{i.price}}/day<br><br>
+                            </div>
+                            <form action="booking" method="post">
+                                {% csrf_token %}
+                            <input type="hidden" name="carid" value="{{i.id}}">
+                            <input type="hidden" name="cname" value="{{i.carname}}">
+                            <input type="submit" class="btn" name="Book" value="book"><br><br>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+    {% endfor %}
+</body>
+</html>
