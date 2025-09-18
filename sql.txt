@@ -8,3 +8,4 @@ create table cdetails(id int auto_increment,uid int references dealer(user_id),c
 
 
 create table booking(id int auto_increment,cid int references cdetails(id),did varchar(5),uid int references customer(id),uname varchar(20),carname varchar(20),pickup date,dp date,tot_days varchar(3),tot_price varchar(10),primary key(id))engine=MyISAM auto_increment=0 default char set=utf32;
+
